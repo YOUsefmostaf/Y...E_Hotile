@@ -1,0 +1,368 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:arial , tahoma, sans-serif;
+    perspective: 1000px;
+    transition: all .3s;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*  start the header */
+
+
+.header{
+    width: 100vw;
+    min-height: 560px;
+    background-image: url(../photo/photo11.jpg);
+    overflow: hidden;
+    padding: 40px;
+}
+.name h1{
+text-align: center;
+font-weight: bolder;
+color: #dc3545;
+font-size: 6vw;
+}
+
+.navbar nav{
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.507) !important;
+    border-radius: 7px;
+    color: white;
+}
+
+.navbar a {
+    color: white !important;
+    margin: 10px;
+    font-size: 1.5vw;
+}
+.navbar a:hover{
+    font-weight: bolder;
+    color: #dc3545 !important;
+}
+.navbar .dropdown-menu {
+    width: 200px;
+}
+.navbar .dropdown ul li a {
+    color: #777 !important;
+    margin: 0;
+}
+.navbar .dropdown ul li a:hover {
+    margin: 0;
+    padding-left: 30px !important;
+    color: #dc3545 !important;
+}
+
+/*  end the header */
+
+
+/*  =============================================
+===============================================
+================================================ */
+
+/* start the services */
+.photo
+{
+    width: 100%;
+    height: 200px;
+}
+.photo img
+{
+    height: 100%;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+.photo
+{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100%;
+}
+.servies h2,p
+{
+    text-align: center;
+}
+.heading
+{
+  text-align: center;
+  margin: 40px;
+
+}
+.heading span:first-of-type
+{
+  font-size: 6vw;
+  font-weight: bolder;
+  color: #dc3545;
+  margin-top: 30px;
+}
+.heading span:last-of-type
+{
+  font-style: italic;
+  font-size: 3vw;
+}
+.servies
+{
+  margin-bottom: 70px;
+}
+.se > img:hover 
+{
+  opacity: .5;
+}
+.se h2:hover
+{
+  color: #dc3545;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*  end the services */
+
+
+/*  =============================================
+===============================================
+================================================ */
+
+/*  end the sales */
+.sales
+{
+  width: 100%;
+  background-image: url("../photo/p47.jpg");
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.overlay
+{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.589);
+}
+.ca
+{
+    background-color: #0000005b;
+    margin-top:40px ;
+    border-radius: 20px;
+}
+.sales-header
+{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  background-color:#dc3545;
+  text-align: center;
+}
+.sales-header:hover
+{
+  animation: round 1.5s infinite ease-in-out;
+}
+.sales-header h1
+{
+  padding: 25%;
+}
+.sales-image
+{
+  margin: 25px 0;
+  width:100%;
+  opacity: 1;
+  border-radius: 10px;
+}
+.sales-image:hover
+{
+  opacity: .4;
+}
+.ca > h1:hover
+{
+  color:#dc3545 ;
+  font-style: italic;
+}
+@keyframes round
+{
+  0%
+  {
+    transform: rotate(0);
+  }
+  50%
+  {
+    color: black;
+    background-color:#dc35468e;
+  }
+  100%
+  {
+    transform: rotatez(360deg);
+  }
+}
+
+/*  end the sales */
+
+
+/*  =============================================
+===============================================
+================================================ */
+
+/*  start the offer */
+
+.offer
+{
+  margin: 50px 0 ;
+  background-image: url("../photo/p48.jpg");
+  background-size: 100% 100%;
+  margin-bottom: 0;
+}
+.offer h1
+{
+  text-align: center;
+  font-size: 4vw;
+  color:#dc3545 ;
+  font-weight: bold;
+  padding: 50px 0;
+}
+.offer h2
+{
+  text-align: center;
+  font-size: 2.5vw;
+  color:white ;
+  font-weight: bold;
+  margin-top: -30px;
+}
+.offer p
+{
+  text-align: center;
+  font-size: 2.5vw;
+  color:white ;
+  padding: 20px 140px;
+}
+.over 
+{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.747);
+}
+@keyframes biger
+{
+  0%
+  {
+    font-size: 100px;
+  }
+  50%
+  {
+    font-size: 60px;
+    color:#dc35468e;
+  }
+  100%
+  {
+    font-size: 100px;
+  }
+}
+
+/*  end the offer */
+
+
+/*  =============================================
+===============================================
+================================================ */
+
+/*  start the footer */
+
+footer
+{
+  background-color: black;
+
+}
+footer h1
+{
+  text-align: center;
+  padding-top: 30px;
+}
+footer h1 span:first-of-type
+{
+  font-size: 5vw;
+  font-weight: bolder;
+  color: #dc3545;
+  margin-top: 30px;
+}
+footer h1 span:last-of-type
+{
+  font-style: italic;
+  font-size: 3.5vw;
+  color: white;
+}
+footer div a:hover
+{
+  opacity: .5;
+
+}
+
+/*  end the footer */
+
+
+/*  =============================================
+===============================================
+================================================ */
+
+@media(max-width:567px)
+{
+.name h1{
+
+    font-size: 13vw;
+}
+
+.navbar a {
+    font-size: 6vw;
+    text-align: center;
+}
+
+.heading span:first-of-type
+{
+  font-size: 9vw;
+
+}
+.heading span:last-of-type
+{
+  font-style: italic;
+  font-size: 6vw;
+}
+.offer h1
+{
+  font-size: 7vw;
+}
+.offer h2
+{
+  font-size: 4vw;
+
+}
+.offer p
+{
+  font-size: 5vw;
+  padding: 10px;
+
+}
+footer div a
+{
+font-size: 7.5vw;
+}
+footer div p
+{
+font-size: 3vw;
+}
+}
+
+
+
+
+@media( min-width: 567px) and (max-width:768px)
+{
+.name h1{
+
+    font-size: 8vw;
+}
+
+.navbar a {
+    font-size: 3vw;
+    text-align: center;
+}
+}

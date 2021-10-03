@@ -1,0 +1,302 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:arial , tahoma, sans-serif;
+    perspective: 1000px;
+}
+
+/* start the header */
+
+.header-page
+{
+    width: 100vw;
+    height: 700px;
+    background-image: url(../photo/image25.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.overlay
+{
+    width: 100%;
+    height: 100%;
+    background-color: #000000ba;
+}
+.branch
+{
+    text-align: center;
+    color: rgb(175, 175, 175);
+}
+.branch h1
+{
+    font-size: 6vw;
+    padding-top: 100px;
+}
+.branch h1 span , .branch p span
+{
+    color: #dc3545;
+    font-weight: bold;
+}
+c
+.branch ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.branch ul li
+{
+    list-style: none;
+    margin: 0 30px;
+    font-size: 1.5vw;
+    color: white;
+    position: relative;
+}
+.branch ul li:before,.branch ul li:after,.branch a:before,.branch a:after
+{
+    position: absolute;
+    background-color:#dc3545 ;
+    transition: .3s;
+}
+.branch ul li:before,.branch a:before
+{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    top: -5px;
+    left: 0;
+}
+.branch ul li:after,.branch a:after
+{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    right: 0;
+}
+.branch ul li:hover:before,.branch ul li:hover:after,.branch a:hover:before,.branch a:hover:after
+{
+    width: 100%;
+}
+.branch ul li:hover,.branch a:hover
+{
+    color: #dc3545;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.branch a
+{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+/* end the header */
+
+/* =====================================
+=====================================
+===================================== */
+
+
+/* start the welcome */
+
+.welcome
+{
+    text-align: center;
+    color: #848484;
+    margin-top: 30px;
+    padding: 0 100px;
+}
+.welcome h1
+{
+    font-size: 7vw;
+}
+.welcome h1 span 
+{
+    color: #dc3545;
+    font-weight: bold;
+}
+.welcome p
+{
+    font-size: 2vw;
+    margin-top: 20px;
+}
+.welcome p span
+{
+    font-weight: bold;
+    color: #636363;
+}
+/* end the welcome */
+
+/* =====================================
+=====================================
+===================================== */
+
+/* start the gallary */
+
+.border
+{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.border img
+{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.border span
+{
+    position: absolute;
+    background-color: #dc3545;
+    transition: .5s;
+}
+.one
+{
+    top: 0;
+    left: 0;
+    width: 7px;
+    height: 0;
+}
+.two
+{
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    width: 0;
+}
+.three
+{
+    bottom: 0;
+    right: 0;
+    width: 7px;
+    height: 0;
+}
+.four
+{
+    top: 0;
+    right: 0;
+    height: 7px;
+    width: 0;
+}
+.border h1
+{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: #dc3545;
+    font-weight: bolder;
+    font-size: 50px;
+    opacity: 0;
+}
+.border h2
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #dc3545;
+    border-radius: 5px;
+    padding: 6px;
+    transform: translateY(58px);
+}
+.view
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    padding: 6px;
+    font-size: 25px;
+    transform: translateY(57px);
+}
+.border:hover h1
+{
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 1s;
+}
+.border:hover h2,.border:hover .view
+{
+    transform: translateY(4px);
+    transition: 1.5s;
+    transition-delay:1.5s ;
+}
+.border:hover .one,.border:hover .three
+{
+    height: 100%;
+}
+.border:hover .two,.border:hover .four{
+    width: 100%;
+}
+.border:hover img
+{
+    transition-delay:.5s ;
+    opacity: .5;
+}
+/* end the gallary */
+
+/* =====================================
+=====================================
+===================================== */
+
+
+@media(max-width:567px)
+{
+    .branch h1
+    {
+        font-size: 12vw;
+    }
+    .branch h1
+{
+    font-size: 8vw;
+
+}
+
+.branch ul li
+{
+    font-size: 3vw;
+}
+.branch a
+{
+    font-size: 5vw;
+
+}
+.welcome p
+{
+    font-size: 4vw;
+    padding: 0 ;
+
+}
+}
+
+@media( min-width: 567px) and (max-width:768px)
+{
+    .branch h1
+    {
+        font-size: 12vw;
+    }
+    .branch h1
+{
+    font-size: 8vw;
+
+}
+.branch ul li
+{
+
+    font-size: 3.5vw;
+
+}
+.branch a
+{
+    font-size: 5vw;
+
+}
+.welcome p
+{
+    font-size: 4vw;
+    padding: 0 ;
+
+}
+}

@@ -1,0 +1,136 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:arial , tahoma, sans-serif;
+    perspective: 1000px;
+}
+body{background-color: black;}
+h1
+{
+    text-align: center;
+    margin-top: 100px;
+}
+h1 span:first-of-type
+{
+    color:#dc3545 ;
+    font-weight: bolder;
+    font-size: 10vw;
+}
+h1 span:last-of-type,footer h1 span:last-of-type
+{
+    font-style: italic;
+    color: #dc3546b2;
+}
+.feedback1
+{
+    word-wrap: break-word;
+    margin: auto;
+    width: 50%;
+    margin-top: 60px;
+    border-left: 6px solid #ddd;
+}
+.feedback1 div
+{
+    background-color: #dc3545;
+    color: white;
+    margin: 30px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    position: relative;
+}
+.feedback1 div:hover
+{
+    opacity: .5;
+}
+.feedback1 div p
+{
+    font-size: 1.3vw;
+}
+.feedback1 div::before
+{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #0a3d62;
+    border: 4px solid #ddd;
+    position: absolute;
+    left: -45px;
+    top: 39px;
+    border-radius: 100%;
+}
+.feedback1 div::after
+{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px;
+    border-color: transparent #0a3d62 transparent transparent;
+    position: absolute;
+    top: 36px;
+    left: -23px;
+}
+.feedback1 div:nth-of-type(even)
+{
+    background-color: #dc3546b2;
+}
+.feedback2
+{
+    width: 50%;
+    margin: auto;
+}
+input:focus,textarea:focus
+{
+    font-size: 25px;
+    transition: all 1.5s;
+}
+input[type="button"]
+{
+    font-size: 18px;
+    transition: none;
+}
+.feedback2 div:hover
+{
+    opacity: .5;
+}
+
+
+@media(max-width:567px)
+{
+    
+
+    .feedback1{
+        margin-left: 20px;
+        width: 100%;
+    }
+    .feedback1 div p
+{
+    font-size: 4vw;
+}
+.feedback2
+{
+    width: 100%;
+
+}
+}
+
+@media( min-width: 567px) and (max-width:768px)
+{
+
+    .feedback1{
+        margin-left: 20px;
+        width: 100%;
+    }
+    .feedback1 div p
+{
+    font-size: 3.5vw;
+}
+.feedback2
+{
+    width: 100%;
+}
+}
